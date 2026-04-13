@@ -1,0 +1,51 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Client" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBox x:Name="SearchBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="200"/>
+                <Button Content="Suchen" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Click="Button_Click" Margin="30,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Column="1">
+                <ComboBox x:Name="SearchResultBox" Width="130" ItemsSource="{Binding SearchCities}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding CityName}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <ComboBox x:Name="PathBox" Width="130" Margin="20,0,0,0" ItemsSource="{Binding PathCities}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding CityName}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button Click="Button_Click_1" Content="Verschieben" Margin="20,0,0,0"/>
+                <Button Click="Button_Click_2" Content="Berechnen" Margin="20,0,0,0"/>
+            </StackPanel>
+        </Grid>
+
+        <Canvas x:Name="WorldMap" Grid.Row="1">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/Earthmap.jpg"/>
+            </Canvas.Background>
+        </Canvas>
+    </Grid>
+</Window>

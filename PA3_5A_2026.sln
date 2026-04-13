@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11626.88 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B704F1C4-2E4B-4E57-9876-FB15787B53D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetLib", "NetLib\NetLib.csproj", "{B80DCF4B-50DC-47A6-ACF3-6A46D64991A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BD29FA-3357-4B0B-936D-F86D0A97BD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B704F1C4-2E4B-4E57-9876-FB15787B53D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B704F1C4-2E4B-4E57-9876-FB15787B53D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B704F1C4-2E4B-4E57-9876-FB15787B53D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B704F1C4-2E4B-4E57-9876-FB15787B53D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80DCF4B-50DC-47A6-ACF3-6A46D64991A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80DCF4B-50DC-47A6-ACF3-6A46D64991A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80DCF4B-50DC-47A6-ACF3-6A46D64991A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80DCF4B-50DC-47A6-ACF3-6A46D64991A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED2794DC-0380-4069-A2D5-1CAB008CB32B}
+	EndGlobalSection
+EndGlobal
